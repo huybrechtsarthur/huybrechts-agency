@@ -42,8 +42,31 @@ html {
     list-style: none;
   }
   
+  .site-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 90px;
+    flex-shrink: 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-right: auto;
+  }
+  
+  .site-title::after {
+    content:'.';
+    position: absolute;
+    right: -5px;
+    bottom: 35px;
+    font-size: 2rem;
+    font-family: serif;
+    color: #37BA83;
+    margin-right: auto;
+  }
+  
   .nav-link-item {
-    padding-right: 2rem;
+    padding-left: 2rem;
   }
   
   .nav-link-text {
